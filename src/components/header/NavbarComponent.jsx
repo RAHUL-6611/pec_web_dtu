@@ -45,20 +45,7 @@ const NavbarComponent = () => {
               alert("Its coffee time...");
             },
           },
-          {
-            title: "Admissions",
-            icon: faBookOpen,
-            isAuth: true,
-            // isAuth: () => {
-            //   // Claim authorization logic...
-            //   return false;
-            // },
-          },
-          {
-            title: "For Students",
-            icon: faGlobe,
-            isAuth: true,
-          },
+          
           {
             title: "For Faculty and Staff",
             icon: faCogs,
@@ -153,16 +140,7 @@ const NavbarComponent = () => {
             icon: faChartPie,
             isAuth: true,
           },
-          {
-            title: "Resources",
-            icon: faChartPie,
-            isAuth: true,
-          },
-          {
-            title: "Administration",
-            icon: faChartPie,
-            isAuth: true,
-          },
+          
         ]}
       />
   );

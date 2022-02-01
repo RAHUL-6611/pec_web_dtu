@@ -1,138 +1,142 @@
-.nav_logo .nav_logo_img{
-    width: 7rem;
-    height: 7rem;
+header{
+    height: 100vh;
+    width: 100%;
+    background:#FAFAFA;
+    /* background: #000; */
+}
+
+.marquee{
+    background:red;
+    color: #fff;
+}
+
+.top__line{
+    width: 100%;
+    background:rgb(139, 0, 0);
+    color: #fff;
+    
+}
+.options__topline{
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-end;
+    margin-right: 250px;
+}
+.options__topline span{
+    font-size: 15px;
+    color: #fff;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_and_searchbar{
+    display: flex;
+    /* justify-content:center; */
+    justify-content:space-around;
+    padding: 10px 100px;
+    background: linear-gradient(90deg, rgba(246,218,189,1) 0%, rgba(255,255,255,1) 54%, rgba(255,246,234,1) 100%);
+}
+
+.logo_header{
+    display: flex;
+    gap:2rem;
     border: none;
 }
 
-
-.header{
-    position: relative;
-    height: 100vh;
-    /* background: rgb(214, 131, 36); */
-    background: url("https://images.shiksha.com/mediadata/images/1488259418phpfB3vsL.jpeg") no-repeat center;
-    background-size: 100% ;
-    /* padding: 2rem 5rem; */
+.logo_header img{
+    width: 100px;
+    border: none;
+    
 }
-
-.navtop{
-    padding: 1rem 5rem;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    backdrop-filter: blur(10px);
-
-}
-
-.nav_address{
-    display: flex;
-    text-align:right;
-    /* color: #fff; */
-    font-weight: 500;
-    gap: 0;
-}
-
-.nav_address p{
-    padding: 0;
+.logo_header h1{
+    /* padding: 0; */
     margin: 0;
-}
-.nav_icon{
-    display: flex;
-    width: 55px;   
-    font-size: 40px;
-    padding: 0 .5rem;
+    border: 0;
 }
 
-.invisible{
+.searchbar{
+    display: flex;
+    align-items: center;
+}
+
+input{
+    padding-left: 10px;
+    border: 1px solid #000;
+    border-radius:5px;
+
+}
+
+.header__image{
+    width:100%;
+     height:70vh;
+     z-index: -1;
+     box-shadow: 2px 1px 42px 39px rgba(255,255,255,0.75) inset;
+     -webkit-box-shadow: 2px 1px 42px 39px rgba(255,255,255,0.75) inset;
+     -moz-box-shadow: 2px 1px 42px 39px rgba(255,255,255,0.75) inset;
+}
+
+.display_none{
     display: none;
-}
-
-.header_cards{
-    /* position: absolute; */
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    justify-content:center;
-    padding: 1rem 4rem;
-    /* top: 60px; */
-    /* bottom:-50px; */
-    /* transform: translateY(55%); */
-}
-
-
-.header_card{
-    display: flex;
-    gap: 0;
-    flex-direction: column;
-    padding: 1rem 1rem;
-    justify-content:center;
-    align-items:center;
-    max-height: 250px;
-}
-.header_card p{
-        text-align: center;
-        padding: 0;
-
-}
-.header_card h2{
-        text-align: center;
-        padding: 0;
-
-}
-.header_card div{
-    font-size: 35px;
+    position:absolute;
+    background:  rgba(255,255,255,0.75);
     padding: 0;
+    border-radius: 10px;
+    transition: display 1s;
+}
+
+.display_none p{
+    padding: 10px 40px;
     margin: 0;
+    display: flex;
+    /* transition: display 1s; */
 }
 
-.white_card{
-    background:#fff;
+.navbar_for_header{
+    display: flex;
+    justify-content:center;
+    background: linear-gradient(90deg, rgba(246,218,189,1) 0%, rgba(255,255,255,1) 54%, rgba(255,246,234,1) 100%);
 }
 
-.red_card{
-    background: rgb(212, 6, 6);
-    color: #fff;
+.navbar_for_header ul{
+    display: flex;
 }
 
-.text_middle{
-    font-size: 70px;
-    text-align: center;
-    color: #fff;
-    margin-top: 8rem;
-    text-shadow: 3px 0px 2px rgba(22, 22, 22, 1);
-    word-spacing: 2vw;    
+.navbar_for_header ul li{
+    padding: 20px 40px;
+    position: relative;
 }
 
-.fixed_navbar{
-    background:  #000 !important;
-    height: 500px;
+.image_gallery{
+    width: 100%;
+    height: 80vh;
+    box-shadow: 2px 1px 42px 39px rgba(255,255,255,0.75) inset;
+-webkit-box-shadow: 2px 1px 42px 39px rgba(255,255,255,0.75) inset;
+-moz-box-shadow: 2px 1px 42px 39px rgba(255,255,255,0.75) inset;
+    background:url("../assets//college.jpeg") no-repeat;
+    background-size: 100%;
 }
 
-@media (max-width:900px) {
-    .header_cards{
-        grid-template-columns: repeat(2,1fr);
-        place-items: center;
-    }
-    .text_middle{
-        font-size: 4rem;
-    }
+.navbar_for_header ul li::after{
+    content:"";
+    position: absolute;
+    border-right: 1px solid rgba(1,1,1,0.5);
+    height: 30px;
+    right: -4px;
+    filter:blur(1px);
+}
+
+.navbar_for_header ul li:last-child:after{
+    border: none;
     
 }
 
-@media (max-width:600px) {
-    .header_cards{
-        grid-template-columns: repeat(1,1fr);
-        place-items: center;
-        justify-content:center;
-        align-items: center;
-        padding: 0;
-    }
+.navbar_for_header ul li:hover .display_none{
+    display: block;
+    transition: display 1s;
+}
 
-    .header{
-        padding: 2rem;
-    }
-    
-    .text_middle{
-        font-size: 4rem;
-    }
-    
+.navbar_for_header ul li .display_none ul li::after{
+    border: none;
 }

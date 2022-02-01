@@ -1,55 +1,156 @@
+import SearchField from "react-search-field";
 import React from 'react';
-import logo from "../assets/logo.png";
-// import college from "../assets/college.jpeg";
-import "./header.css"
-import { GoLocation } from "react-icons/go";
-import { MdGroups } from "react-icons/md";
-import { BiNews } from "react-icons/bi";
-import { ImRocket } from "react-icons/im";
-import { RiTestTubeFill } from "react-icons/ri";
+import "./header.css";
+import { FaLocationArrow } from "react-icons/fa";
+import { BsSearch } from "react-icons/bs";
+import logo from "../assets/logo.png"
 import NavbarComponent from "./NavbarComponent"
+import college from "../assets/college.jpeg"
 
-const Card = ({bg,text,title,icon}) => {
-    return(
-        <div className={`${bg}_card header_card`}>
-            <h2>{title}</h2>
-            <div>
-                {icon}
-            </div>
-            <p>{text}</p>
-        </div>
-    )
-}
 const Header = () => {
-  return <div className="header">
-      <div className="navtop">
-          <div className="nav_logo">
-              <img src={logo} alt="" className="nav_logo_img"/>
+  return (<div className="header">
+      {/* <marquee className="marquee">Pondicherry Technological University</marquee> */}
+      <div className="top__line">
+          <div className="options__topline">
+              <span>Departments and Centres <FaLocationArrow />
+              </span>
+                |
+              <span>Shortcuts <FaLocationArrow />
+              </span>
+              |
+              <span>Contact <FaLocationArrow />
+              </span>
           </div>
-            <div className="nav_address">
-                <div className="text_add">
-                    <p>Pondicherry Technological University</p>
-                    <p>Pondicherry, India</p>
-                </div>
-                <div className="icon_container">
-                        <GoLocation className="nav_icon" />
-                </div>
-                </div>          
       </div>
-      <div className="navbottom">
-          <NavbarComponent/>
+      <div className="logo_and_searchbar">
+            <div className="logo_header">
+                <img src={logo} alt="aaaaaaaaaaa"/>
+                <h1>Pondicherry Technological <br/> University</h1>
+          </div>
+          <div className="searchbar">
+              <input type="text" placeholder="Search Here.."/>
+              <BsSearch />
+          </div>
       </div>
-      <div className="text_middle">
-            FORTIFYING WITH WISDOM
-      </div>
+      <div className="navbar_for_header">
+            <ul>
+                <li>Education
+                    <div className="display_none">
+                        <ul>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                        </ul>
+                        <ul>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                        </ul>
+                        <ul>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                        </ul>
 
-      {/* <div className="header_cards">
-            <Card bg="white" text=" sit amet consectetur adipisicing elit. Eos, optio quis rerum" title="RESEARCH" icon={<RiTestTubeFill />}/>
-            <Card bg="red" text=" sit amet consectetur adipisicing elit. Eos, optio quis rerum" title="STARTUPS" icon={<ImRocket />}/>
-            <Card bg="white" text=" sit amet consectetur adipisicing elit. Eos, optio quis rerum" title="NEWS" icon={<BiNews />}/>
-            <Card bg="red" text=" sit amet consectetur adipisicing elit. Eos, optio quis rerum" title="CAMPUS LIFE" icon={<MdGroups />}/>
-      </div> */}
-  </div>;
+                    </div>
+                </li>
+
+                <li>Research
+
+                    <div className="display_none">
+                        <ul>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                        </ul>
+                        <ul>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                        </ul>
+                        <ul>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li>Innovation
+                    <div className="display_none">
+                        <ul>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                        </ul>
+                        <ul>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                        </ul>
+                        <ul>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                        </ul>
+
+                    </div>
+
+                </li>
+                <li>About PTU
+                    <div className="display_none">
+                        <ul>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                        </ul>
+                        <ul>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                        </ul>
+                        <ul>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                            <li>Section 1</li>
+                        </ul>
+
+                    </div>
+
+                </li>
+            </ul>
+      </div>
+     <div className="image_gallery">
+         {/* <img src={college} alt="" className="header__image"/> */}
+         
+         
+         
+     </div>
+  </div>);
 };
 
 export default Header;

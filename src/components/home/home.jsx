@@ -14,10 +14,10 @@ export default function Home() {
         <div>
            <CardHold />
            <AboutUs />
-           <StudentCount />
-           <CarouselHold />
            <NewsBlock />
            <CampusLifeOne />
+           <CarouselHold />
+           <StudentCount />
         </div>
     )
 }

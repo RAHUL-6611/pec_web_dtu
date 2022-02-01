@@ -7,10 +7,10 @@ export default function NewsBlock()
     return(
         <>
          <div className="newsContainer">
-         <h5 style={{"padding-top" : "2rem"}}>Highlights , Announcements ,Current Openings</h5>
+         {/* <h5 style={{"padding-top" : "2rem"}}>Highlights , Announcements ,Current Openings</h5> */}
 
       <div class="container" style={{"margin-top" : "50px"}}>
-          <div class="row">
+          {/* <div class="row">
               <div class="col-md-4 pt-3">
                 <div class="newsCard" >
                     <div class="newsCard-body">
@@ -57,9 +57,10 @@ export default function NewsBlock()
                 </div>
               </div>
           </div>
-      </div>
+        */}
+      </div> 
 
-      <h5 style={{"margin-top" : "5rem"}}>Latest News , Announcements ,Featured Research</h5>
+      {/* <h5 style={{"margin-top" : "5rem"}}>Latest News , Announcements ,Featured Research</h5> */}
 
       <div class="container-1" style={{"margin-top" : "50px"}}>
 
